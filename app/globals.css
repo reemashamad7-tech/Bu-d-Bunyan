@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-gray: #3A3D40;
+  --color-compliance-green: #2E7D32;
+  --color-accent-gold: #E5A93B;
+  --color-alert-red: #EF4444;
+  --color-warning-orange: #F59E0B;
+  --color-low-yellow: #EAB308;
+  
+  --color-main-bg: #F8FAFC;
+  --color-white-card: #FFFFFF;
+  --color-border-gray: #E2E8F0;
+  --color-muted-text: #64748B;
+  --color-main-text: #1E293B;
+  
+  --color-dark-viewer: #202326;
+  --color-light-blue-msg: #E0F2FE;
+  --color-light-green-msg: #DCFCE7;
+
+  --font-sans: var(--font-ibm-arabic), var(--font-inter), sans-serif;
+  --font-mono: monospace;
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #1E293B;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars for engineering style layout */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* RTL specifics */
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
